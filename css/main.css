@@ -6,11 +6,14 @@ div.text-box {
     background-color: burlywood;
     width: 50%;
     min-width: 300px;
-    padding: 20px;
+    /* padding: 20px; */
+    float: left;
 }
 
-div.text-box>div.text {
+div.text-box>.text {
+    /* lepsza opcja */
     padding: 20px;
+    margin: 20px;
     text-align: justify;
     background-color: grey;
     border: 3px solid black;

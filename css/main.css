@@ -1,0 +1,17 @@
+body{
+    margin: 0px;
+}
+
+div.text-box {
+    background-color: burlywood;
+    width: 50%;
+    min-width: 300px;
+    padding: 20px;
+}
+
+div.text-box>div.text {
+    padding: 20px;
+    text-align: justify;
+    background-color: grey;
+    border: 3px solid black;
+}

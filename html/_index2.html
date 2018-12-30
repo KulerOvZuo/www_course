@@ -12,10 +12,28 @@
         <meta name="description" content="Strona testowa" />
         <meta name="keywords" content="Strona testowa itd" />
 
-        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="../css/main2.css" />
         <script src="js/main.js"></script>
+
+        <!-- <link href="../css/main.css" rel="stylesheet" type="text/css" /> -->
+        <style type="text/css">
+            /*<![CDATA[*/
+            p.definition {
+                color: green;
+            }
+
+            p#special{
+                color: magenta;
+            }
+            /*]]>*/
+        </style>
     </head>
     <body>
-
+        <p>zwykły</p>
+        <p class="definition">niezwykły</p>
+        <p>zwykły</p>
+        <p class="definition">niezwykły</p>
+        <div class="definition">niezwykły? nope</p>
+        <p id="special">specjalny akapit</p>
     </body>
 </html>

@@ -24,12 +24,12 @@ a {
 }
 
 a:link, a:visited {
-    color: #ba00ff;
+    color: #a66fd3;
     text-decoration: none;
 }
 
 a:hover, a:active{
-    color: cornflowerblue;
+    color: teal;
 }
 
 /* header */
@@ -93,7 +93,7 @@ header img.logo {
 
 #top-menu a:link .link,
 #top-menu a:visited .link{
-    background-color: #ba00ff;
+    background-color: #a66fd3;
     color: white;
 }
 

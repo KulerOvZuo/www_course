@@ -30,6 +30,7 @@ a:link, a:visited {
 
 a:hover, a:active{
     color: teal;
+    text-decoration: none;
 }
 
 /* header */
@@ -71,7 +72,8 @@ header img.logo {
 
     position: absolute;
     left: 10px;
-    bottom: -0.2em;
+    top: 120px;
+    /* bottom: -0.2em; */
 }
 
 #top-menu ul {
@@ -80,27 +82,60 @@ header img.logo {
 
 #top-menu li {
     float: left;
-    margin-right: 0.15em;
+    margin-right: 0.3em;
 }
 
-#top-menu .link {
-    padding: 0.3em 0.6em;
-    border-top-left-radius : 0.3em;
-    border-top-right-radius : 0.3em;
+#top-menu .top-menu-link {
+    padding: 0.5em 0.7em;
+    border-top-left-radius : 0.5em;
+    border-top-right-radius : 0.5em;
     border-top: 2px solid #292929;
     border-left: 2px solid #292929;
 }
 
-#top-menu a:link .link,
-#top-menu a:visited .link{
+#top-menu a:link .top-menu-link,
+#top-menu a:visited .top-menu-link {
     background-color: #a66fd3;
     color: white;
 }
 
-#top-menu a:hover .link,
-#top-menu a:active .link,
-#top-menu a .link.current {
+#top-menu a:hover .top-menu-link,
+#top-menu a:active .top-menu-link,
+#top-menu a .top-menu-link.top-menu-link-selected {
     background-color: teal;
     color: white;
 }
 
+/* expandable menu */
+#top-menu .top-menu-expandable li {
+    float: none;
+}
+
+#top-menu .top-menu-expandable .top-menu-link::after {
+    content: " [...]";
+    font-size: 0.6em;
+}
+
+#top-menu .top-menu-expandable .top-menu-expandable-object {
+    /* defaultowe ukrycie */
+    display: none;
+    /* aby nie rozszerzać rodzica */
+    position: fixed;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+#top-menu .top-menu-expandable:hover .top-menu-expandable-object {
+    /* pokazanie po najechaniu */
+    display: block;
+}
+
+#top-menu .top-menu-expandable .top-menu-expandable-object .top-menu-link {
+    border-top-right-radius : 0.5em;
+    border-bottom-right-radius : 0.5em;
+    margin-top: 0.1em;
+}
+
+#top-menu .top-menu-expandable .top-menu-expandable-object .top-menu-link::after {
+    display: none;
+}

@@ -8,6 +8,7 @@ body {
     background-repeat: repeat;
     align-content: center;
     padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #main-container {
@@ -18,8 +19,12 @@ body {
 }
 
 /* links */
+a {
+    text-decoration: none;
+}
+
 a:link, a:visited {
-    color: teal;
+    color: #ba00ff;
     text-decoration: none;
 }
 
@@ -38,7 +43,7 @@ header img.logo {
     border: 0;
     position: absolute;
     left: 10px;
-    top: 25px;
+    top: 12px;
 }
 
 #contact-box {
@@ -46,8 +51,7 @@ header img.logo {
     position: absolute;
     right: 20px;
     top: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 100%;
+    font-size: 1em;
     font-weight: 600;
     color: #292929;
 }
@@ -55,3 +59,48 @@ header img.logo {
 #contact-box td {
     text-align: left;
 }
+
+/* top menu */
+#top-menu {
+    border: none;
+
+    font-weight: 600;
+    font-variant: small-caps;
+    display: inline-block;
+    color: white;
+
+    position: absolute;
+    left: 10px;
+    bottom: -0.2em;
+}
+
+#top-menu ul {
+    list-style-type: none;
+}
+
+#top-menu li {
+    float: left;
+    margin-right: 0.15em;
+}
+
+#top-menu .link {
+    padding: 0.3em 0.6em;
+    border-top-left-radius : 0.3em;
+    border-top-right-radius : 0.3em;
+    border-top: 2px solid #292929;
+    border-left: 2px solid #292929;
+}
+
+#top-menu a:link .link,
+#top-menu a:visited .link{
+    background-color: #ba00ff;
+    color: white;
+}
+
+#top-menu a:hover .link,
+#top-menu a:active .link,
+#top-menu a .link.current {
+    background-color: teal;
+    color: white;
+}
+

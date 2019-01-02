@@ -7,14 +7,14 @@ body {
     background-image: url("../static/background_3.jpg");
     background-repeat: repeat;
     align-content: center;
-    padding: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-#main-container {
-    border: 5px solid black;
+.section {
+    border: 4px solid #292929;
+    border-radius: 0.8em;
     width: 1004px;
-    margin: 0 auto;
+    margin: 20px auto;
     background-color: rgba(255, 226, 172, 0.25)
 }
 
@@ -44,7 +44,7 @@ header img.logo {
     border: 0;
     position: absolute;
     left: 10px;
-    top: 12px;
+    top: 10px;
 }
 
 #contact-box {
@@ -72,8 +72,7 @@ header img.logo {
 
     position: absolute;
     left: 10px;
-    top: 120px;
-    /* bottom: -0.2em; */
+    bottom: -0.2em;
 }
 
 #top-menu ul {
@@ -139,3 +138,5 @@ header img.logo {
 #top-menu .top-menu-expandable .top-menu-expandable-object .top-menu-link::after {
     display: none;
 }
+
+/* main content */

@@ -70,7 +70,7 @@ header img.logo {
     font-weight: 600;
     font-variant: small-caps;
     display: inline-block;
-    color: white;
+    color: azure;
 
     position: absolute;
     left: 10px;
@@ -97,7 +97,7 @@ header img.logo {
 #top-menu a:link .top-menu-link,
 #top-menu a:visited .top-menu-link {
     background-color: #a66fd3;
-    color: white;
+    color: azure;
 }
 
 #top-menu a:link .top-menu-link-special,
@@ -109,7 +109,7 @@ header img.logo {
 #top-menu a:active .top-menu-link,
 #top-menu a .top-menu-link.top-menu-link-selected {
     background-color: teal;
-    color: white;
+    color: azure;
 }
 
 /* expandable menu */
@@ -175,10 +175,6 @@ header img.logo {
     width: 30%;
 }
 
-.section .section-right {
-
-}
-
 #section-left-img {
     margin: 1.6em;
 }
@@ -201,6 +197,60 @@ header img.logo {
     height: 350px;
 }
 
+/* footer */
+footer.section {
+    background-color: rgba(0, 0, 0, 0.795);
+    color: azure;
+    text-align: left;
+    padding: 10px 0;
+}
 
+footer.section img {
+    float: left;
+    margin: 15px;
+}
 
+#form-newsletter-header {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#form-newsletter {
+    color: azure;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+#form-newsletter .input-text {
+    color: black;
+    padding: 0.2em 0.6em;
+    background-color: azure;    
+    border: 2px solid #a66fd3;
+    border-radius: 0.4em;
+    width: 300px;
+}
+
+#form-newsletter .submit-button {
+    color: azure;
+    font-weight: bold;
+    padding: 0.2em 0.6em;
+    background-color: #a66fd3;
+    border: 2px solid #a66fd3;    
+    border-radius: 0.4em;
+}
+
+#form-newsletter .submit-button:hover {
+    background-color: teal;
+    border-color: teal;
+    cursor: pointer;
+}
+
+#form-newsletter .submit-button:active {
+    border-style: inset;
+}
+
+#newsletter-info{
+    margin-top: 0.4em;
+    font-size: 0.8em;
+}
 

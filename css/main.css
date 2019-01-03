@@ -8,9 +8,11 @@ body {
     background-repeat: repeat;
     align-content: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #292929;
 }
 
 .section {
+    display: table;
     border: 4px solid #292929;
     border-radius: 0.8em;
     width: 1004px;
@@ -98,6 +100,11 @@ header img.logo {
     color: white;
 }
 
+#top-menu a:link .top-menu-link-special,
+#top-menu a:visited .top-menu-link-special {
+    background-color: rgb(233, 55, 55);
+}
+
 #top-menu a:hover .top-menu-link,
 #top-menu a:active .top-menu-link,
 #top-menu a .top-menu-link.top-menu-link-selected {
@@ -140,8 +147,60 @@ header img.logo {
 }
 
 /* main content */
-main.section h2 {
+.section p {
+    text-align: justify;
+    margin-top: 1em;
+}
+
+.section h2,
+.section-left h2,
+.section-right h2 {
     color: #a66fd3;
     font-variant: small-caps;
     font-size: 1.6em;
+    text-align: center;
+    margin-bottom: 0.5em;
 }
+
+.inner-section-container {
+    margin: 1em 1.5em;
+}
+
+.section .section-left,
+.section .section-right {
+    display: table-cell;
+}
+
+.section .section-left {
+    width: 30%;
+}
+
+.section .section-right {
+
+}
+
+#section-left-img {
+    margin: 1.6em;
+}
+
+#section-right-img {
+    float: right;
+    margin-left: 1.6em;
+}
+
+.section .section-splitter-vertical  {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.section .section-splitter-vertical .section-splitter-vertical-inner {
+    display: table-cell;
+    width: 2em;
+    border-left: 0.2em solid teal;
+    border-right: 0.2em solid teal;
+    height: 350px;
+}
+
+
+
+

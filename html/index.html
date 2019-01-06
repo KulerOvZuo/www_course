@@ -8,41 +8,136 @@
         <meta name="author" content="Andrew" />
         <meta name="robots" content="index, follow" />
         
-        <title>Strona testowa</title>
-        <meta name="description" content="Strona testowa" />
-        <meta name="keywords" content="Strona testowa itd" />
+        <title>Ciasta Andrzeja</title>
+        <meta name="description" content="Ciasta Andrzeja - przepisy" />
+        <meta name="keywords" content="ciasta torty cukiernia przepisy" />
+
+        <base href="">
 
         <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
-        <script src="js/main.js"></script>        
+        <script src="../js/main.js"></script>  
     </head>
-    <body>
-        <div class="menu-gorne menu-gorne-block">
-            <div class="menu-gorne-right">
-                    2018-12-30
-            </div>   
-            <div class="menu-gorne-left">
-                To jest jakieś menu w przyszłości
-                To jest jakieś menu w przyszłościTo jest jakieś menu w przyszłości
-                To jest jakieś menu w przyszłościTo jest jakieś menu w przyszłości
-                To jest jakieś menu w przyszłościTo jest jakieś menu w przyszłości
-            </div>             
-        </div>
-        <div class="menu-gorne"></div>
+    <body align="center">
+        <div id="main-container" >
+            <header class="section">
+                <a href="index.html" title="Strona główna">
+                    <img src="../static/Logo_transparent.png" alt="logo Ciasta Andrzeja"
+                        class="logo">
+                </a>
+                <div id="contact-box">
+                    <table>
+                        <tbody>
+                            <tr><th>Kontakt:</th></tr>
+                            <tr><td>Ciasta Andrzeja sp. z.o.o.</td></tr>
+                            <tr><td>Andrzej Kulesza</td></tr>
+                            <tr><td>ul. Marszałkowska 33/33</td></tr>
+                            <tr><td>00-002 Warszawa</td></tr>
+                            <tr><td>e-mail:
+                                <a href="mailto:andrzejkulesza6@gmail.com">andrzejkulesza6&#64;gmail.com</a>
+                            </td></tr>
+                        </tbody>
+                    </table>
+                </div>
 
-        <div class="text-box">
-            <div class="text">
-                Szwedzka produkcja wydaje się być bardziej teatrem aniżeli serialem. Teatrem dwóch aktorów w skrajnie minimalistycznej konwencji. W nadmiarze są tylko słowa – głębokie, raniące, poważne czy całkiem zwyczajne. Brak w tym jednak tego pierwiastka „artystyczności”, na który niektórzy są uczuleni. Wszystko od początku do końca jest oczywiste, nie ma miejsca na zastanawianie się „co reżyser miał na myśli” i „po co jest ta 10 minutowa scena bez dialogów, z kamerą orbitującą po pustym pokoju”. Nie trzeba się niczego domyślać, ani nie ma zbyt wiele do interpretacji. To miejsce zajmuje czysty ból nieszczęśliwych ludzi. Jeżeli jesteście gotowi wykrzesać odrobinę empatii i wysłuchać tego co szwedzki reżyser miał do powiedzenia, z pewnością nie będziecie zawiedzeni.       
-                Niezależnie od tego jaki macie gust filmowy – czy wolicie komedie romantyczne, paradokumenty, poważne dramaty, opery mydlane – na pewno zetknęliście się z tematem rozpadającego związku setki razy. Od czasu wynalezienia kinematografu wszystkie odcienie relacji między związanymi ze sobą ludźmi zostały przemielone na miliard sposobów. Trudno jest wnieść coś nowego, czego wcześniej nie było. A jednak Bergmanowi to się udało i tylko z tego względu warto się zapoznać ze „Scenami”. Ale oczywiście na tym się nie kończy.
-                Z tym „wnoszeniem nowego” to ogólnie rzecz biorąc ciężka kwestia. Każda emocja jaką możecie sobie wymyślić została już przeniesiona na taśmę filmową. Zwykle nawet jeśli macie do czynienia z nietypową sytuacją (sceną) to zachowanie bohaterów, psychika, gra aktorska, mimika i wszelkie detale są dosyć przewidywalne. Odnosi się wrażenie, że gdzieś to już było. Istnieją takie utarte schematy grania gniewu, radości czy depresji, które jako widzowie uznajemy za prawdziwe i naturalne. Był taki film o świetnym tytule - „Ludzie z prefabrykatów” (notabene również o niedomagającym małżeństwie). Dzisiaj dominują emocje z prefabrykatów, z których istnienia zdajemy sobie sprawę dopiero oglądając coś co się wybija ponad wszelkie schematy – tak jak szczere w przekazie „Sceny z życia małżeńskiego”.
-            </div>
-        </div>
+                <nav id="top-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html"><div class="top-menu-link top-menu-link-selected">Strona główna</div></a>
+                        </li>                
+                        <li class="top-menu-expandable">
+                            <a href="pages/cafe/list.html"><div class="top-menu-link">Kawiarnie</div></a>
+                            <ul class="top-menu-expandable-object">
+                                <li>
+                                    <a href="pages/cafe/bialystok.html"><div class="top-menu-link">Białystok</div></a>
+                                </li>
+                                <li>
+                                    <a href="pages/cafe/warszawa.html"><div class="top-menu-link">Warszawa</div></a>
+                                </li>
+                            </ul>
+                        </li> 
+                        <li class="top-menu-expandable">
+                            <a href="pages/prices/list.html"><div class="top-menu-link">Cennik</div></a>
+                            <ul class="top-menu-expandable-object">
+                                <li>
+                                    <a href="pages/prices/birthday.html"><div class="top-menu-link">Torty urodzinowe</div></a>
+                                </li>
+                                <li>
+                                    <a href="pages/prices/wedding.html"><div class="top-menu-link">Torty weselne</div></a>
+                                </li>
+                                <li>
+                                    <a href="pages/prices/christmas.html"><div class="top-menu-link top-menu-link-special">Świąteczne</div></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="pages/cooperation.html"><div class="top-menu-link">Współpraca</div></a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+    
+            <main class="section">
+                <section class="section-left">
+                    <div class="inner-section-container">
+                        <h2>
+                            <a href="pages/prices/christmas.html" class="special">Oferta świąteczna</a>
+                        </h2>
+                        <p>
+                            Świąteczne oferta tortów i ciast jest już dostępna!
+                            Złóż
+                            <a href="mailto:ciasta_andrzeja_order@gmail.com" class="special">zamówienie</a>
+                            do 17.12, aby mieć pewność, że Twoich kochani będą mogli
+                            cieszyć się ich smakiem.
+                        </p>
+                        <img class="section-bottom-img" src="../static/christmas_cake_1_resized.jpg" alt="ciasto świąteczne" title="ciasto świąteczne"
+                            width="300px" height="199px" style="min-width:300px;min-height:199px;">
+                    </div>
+                </section>
+                <div class="section-splitter-vertical">
+                    <div class="section-splitter-vertical-inner" style="height:350px;"></div>
+                </div>
+                <section class="section-right">
+                    <div class="inner-section-container">
+                        <h2>
+                            Promocje
+                        </h2>
+                        
+                        <img class="section-right-img" src="../static/cake_with_card_resized.png" alt="ciasto z kartką" title="ciasto z kartką"
+                            width="199px" height="300px" style="min-width:199px;min-height:300px;">
+                        
+                        <p>
+                            Do każdego tortu tradycyjnego, możemy <b>dodać wydruk grafiki</b>
+                            w formacie A4 przesłanej przez Państwa za dodatkową opłatą 20 zł.
+                        </p>
 
-        <div class="text-box">
-            <div class="text">
-                W ciągu tych kilku godzin przewijają się bardzo zwyczajne sytuacje, ale zostały one tak mistrzowsko napisane i zagrane, że nie sposób oderwać od nich wzroku. Ani razu nie miałem w głowie słów „gdzieś to już widziałem”. Nie ma tu nic nieprawdziwego, sztucznego. To porażający w swej naturalności i zwyczajności obraz.
-                Kłótnie, konflikty na ekranie mają zawsze jakiś wspólny mianownik, mimo że przecież zmieniają się bohaterowie i sytuacje. Zawsze pewne subtelności zdają się do was szeptać: hej widzu, to nie jest życie, oglądasz fikcyjną historię. W „Scenach z życia małżeńskiego” nic takiego nie ma w ani jednym momencie. Wszystko wydaje się w pewien sposób nowe, odkrywcze i nigdy wcześniej nie pokazane, pomimo tego, że sytuacja w jakiej znajdują się bohaterowie nie jest świeżym pomysłem. Tej świeżości nadaje konwencja serialu – idealna mieszanka filmu dokumentalnego, gdzie reżyser bezceremonialnie wszedł do szwedzkiego domostwa klasy średniej wyższej i teatru w swej najczystszej formie. Okazuje się, że te dwa przeciwieństwa tworzą doskonałą kompozycję. Całość odczuwa się jako „dokumentalny film fabularny”. Z przewagą tej naturalnej „dokumentalności” nad filmowością.
-                To co uderza od samego początku to to, że każdy odcinek składa się z niewielkiej ilości scen. Zdarzają się takie sytuacje, że 50 minut rozgrywa się w jednym surowym wnętrzu i opiera się na dialogu pomiędzy dwiema głównymi postaciami. Takie rzeczy są najtrudniejsze do zagrania – aktorzy są sam na sam ze sobą i nic nie jest w stanie zamaskować nawet malutkiego fałszu. Ani efekty specjalne, ani muzyka (której w „Scenach” nie ma), ani porywająca fabuła, ani szybkie cięcia. Nawet z największego drewniaka można wykrzesać coś przyzwoitego jeżeli tylko jest otoczony powyższymi podporami. Liv Ullmann i Erland Josephson są nadzy, a mimo to spisują się w swych rolach znakomicie. W przypadku tej pierwszej podejrzewam, że to jedna z najlepiej zagranych postaci w historii kina
-            </div>
-        </div>       
+                        <p>
+                            Oferowane przez naszą Cukiernie wypieki
+                            są przygotowywane według tradycyjnych,
+                            sprawdzonych, przedwojennych receptur wielu mistrzów cukierniczych.
+                            Wszystkie nasze produkty są świeże i wypiekane w&nbsp;sposób naturalny,
+                            bez konserwantów.
+                        </p>
+                    </div>
+                </section>
+            </main>
+    
+            <footer class="section">
+                <img src="../static/mail.png"  alt="mail" title="mail"
+                        width="50px" height="50px" style="width:50px;min-height:50px;"/>
+                <div id="form-newsletter-header">Zapisz się do Newsletter i bądź na bieżąco z nowymi ofertami! :)</div>
+                <div id="form-newsletter">
+                    <form action="#" method="POST">
+                        <div>
+                            Twój e-mail:
+                            <input class="input-text" type="text" name="email" />
+                            <input class="submit-button" type="button" value="Zapisuję się" />
+                        </div>
+                    </form>
+                </div>
+                <div id="newsletter-info">
+                    *Szanujemy Ciebie i tak samo jak Ty zależy nam na tylko ciekawych informacjach
+                </div>
+            </footer>            
+        </div>
     </body>
 </html>

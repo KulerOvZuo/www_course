@@ -1,0 +1,46 @@
+body{
+    margin: 0px;
+}
+
+div.menu-gorne{
+    height: 30px;
+    width: 100%;
+    padding: 10px;
+    overflow: auto;
+}
+
+div.menu-gorne-block{
+    position: fixed;    
+    background-color: green;
+}
+
+.menu-gorne-left{
+    /* width: 500px; */
+    text-align: justify;
+}
+
+.menu-gorne-right{
+    width: 100px;
+    height: 100%;
+    float: right;
+}
+
+div.text-box {
+    background-color: burlywood;
+    width: 50%;
+    min-width: 300px;
+    /* padding: 20px; */
+    float: left;
+}
+
+div.text-box>.text {
+    /* lepsza opcja */
+    padding: 20px;
+    margin: 20px;
+    text-align: justify;
+    background-color: grey;
+    border: 3px solid black;
+}
+
+
+

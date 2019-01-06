@@ -12,7 +12,7 @@
             },
             "problemMatcher": [],
             "args": [
-                "${file}"
+                "html/index.html"
             ],
             "group": {
                 "kind": "build",

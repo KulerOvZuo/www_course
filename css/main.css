@@ -17,7 +17,7 @@ body {
     border-radius: 0.8em;
     width: 1004px;
     margin: 20px auto;
-    background-color: rgba(255, 226, 172, 0.25)
+    background-color: rgba(255, 226, 172, 0.25);
 }
 
 /* links */
@@ -36,6 +36,10 @@ a:link.special, a:visited.special {
 a:hover, a:active,
 a:hover.special, a:active.special{
     color: teal;
+}
+
+tbody th {
+    color: #a66fd3;
 }
 
 /* header */
@@ -82,17 +86,19 @@ header img.logo {
 
 #top-menu ul {
     list-style-type: none;
+    width: 100%;
 }
 
 #top-menu li {
     float: left;
+    width: auto;
     margin-right: 0.3em;
 }
 
 #top-menu .top-menu-link {
     padding: 0.5em 0.7em;
-    border-top-left-radius : 0.5em;
-    border-top-right-radius : 0.5em;
+    border-radius : 0.5em;
+    border-bottom-left-radius: 0;
     border-top: 2px solid #292929;
     border-left: 2px solid #292929;
 }
@@ -119,6 +125,7 @@ header img.logo {
 /* expandable menu */
 #top-menu .top-menu-expandable li {
     float: none;
+    width: auto;
 }
 
 #top-menu .top-menu-expandable .top-menu-link::after {
@@ -133,6 +140,7 @@ header img.logo {
     position: absolute;
     text-align: left;
     font-size: 0.9em;
+    width: auto;
 }
 
 #top-menu .top-menu-expandable:hover .top-menu-expandable-object {
@@ -192,6 +200,7 @@ header img.logo {
 .section .section-right-img {
     float: right;
     margin-left: 1.6em;
+    margin-bottom: 1.4em;
 }
 
 .section .section-splitter-vertical  {
@@ -205,6 +214,54 @@ header img.logo {
     max-width: 0.4em;
     border-left: 0.2em solid teal;
     border-right: 0.2em solid teal;
+}
+
+.section ul {
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    list-style-type: none;
+}
+
+.section ul.float li {
+    float: left;
+    margin-right: 0.3em;
+}
+
+.section .section-link {
+    padding: 0.5em 0.7em;
+    border-radius : 0.5em;
+    border-bottom-left-radius: 0;
+    border-top: 2px solid #292929;
+    border-left: 2px solid #292929;
+    margin-top: 0.1em;
+}
+
+.section a:link .section-link,
+.section a:visited .section-link {
+    background-color: #a66fd3;
+    color: azure;
+}
+
+.section a:link .section-link-special,
+.section a:visited .section-link-special {
+    background-color: #e03737;
+    color: azure;
+}
+
+.section a:hover .section-link,
+.section a:active .section-link {
+    background-color: teal;
+    color: azure;
+}
+
+.section .inner-section-container.cafeteria {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section .cafeteria .info td {
+    text-align: left;
 }
 
 /* footer */

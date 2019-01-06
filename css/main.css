@@ -38,7 +38,16 @@ a:hover.special, a:active.special{
     color: teal;
 }
 
-tbody th {
+table {
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 0.1em;
+    text-align: left;
+}
+
+table th {
     color: #a66fd3;
 }
 
@@ -99,6 +108,7 @@ header img.logo {
     padding: 0.5em 0.7em;
     border-radius : 0.5em;
     border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     border-top: 2px solid #292929;
     border-left: 2px solid #292929;
 }
@@ -260,8 +270,12 @@ header img.logo {
     margin-right: auto;
 }
 
+.section .cafeteria .info th {
+    padding-bottom: 0.6em;
+}
+
 .section .cafeteria .info td {
-    text-align: left;
+    padding: 0.2em 0.5em;
 }
 
 /* footer */

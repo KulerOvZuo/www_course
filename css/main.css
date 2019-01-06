@@ -27,12 +27,15 @@ a {
 
 a:link, a:visited {
     color: #a66fd3;
-    text-decoration: none;
 }
 
-a:hover, a:active{
+a:link.special, a:visited.special {
+    color: #e03737;
+}
+
+a:hover, a:active,
+a:hover.special, a:active.special{
     color: teal;
-    text-decoration: none;
 }
 
 /* header */
@@ -102,7 +105,8 @@ header img.logo {
 
 #top-menu a:link .top-menu-link-special,
 #top-menu a:visited .top-menu-link-special {
-    background-color: rgb(233, 55, 55);
+    background-color: #e03737;
+    color: azure;
 }
 
 #top-menu a:hover .top-menu-link,

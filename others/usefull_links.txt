@@ -1,3 +1,9 @@
 https://www.typetester.org/
 http://repper.studioludens.com/
+http://bg.siteorigin.com/
 http://paletton.com
+http://css3please.com/
+https://caniuse.com/
+
+http://expressprefixr.herokuapp.com/
+https://leaverou.github.io/prefixfree/

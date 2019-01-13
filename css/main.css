@@ -17,7 +17,18 @@ body {
     border-radius: 0.8em;
     width: 1004px;
     margin: 20px auto;
-    background-color: rgba(255, 226, 172, 0.25);
+    background-image: linear-gradient(to right,rgba(255, 226, 172, 0.2), rgba(255, 226, 172, 0.6));
+    box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.5);
+}
+
+.section img:not(.logo) {
+    box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.5);
+    transition: 300ms;
+}
+
+.section img:not(.logo):hover {
+    box-shadow: 0.7em 0.7em 0.5em rgba(0, 0, 0, 0.5);
+    transition: 300ms;
 }
 
 /* links */
@@ -27,15 +38,18 @@ a {
 
 a:link, a:visited {
     color: #a66fd3;
+    transition: 300ms;
 }
 
 a:link.special, a:visited.special {
     color: #e03737;
+    transition: 300ms;
 }
 
 a:hover, a:active,
 a:hover.special, a:active.special{
     color: teal;
+    transition: 300ms;
 }
 
 table {
@@ -63,6 +77,13 @@ header img.logo {
     position: absolute;
     left: 10px;
     top: 10px;
+    transition: 300ms;
+}
+
+header img.logo:hover {
+    transform: scale(1.02);
+    transition: 300ms;
+    transition-delay: 300ms;
 }
 
 #contact-box {
@@ -89,6 +110,7 @@ header img.logo {
     color: azure;
 
     position: absolute;
+    z-index: 10;
     left: 10px;
     top: 117px;
 }
@@ -117,12 +139,14 @@ header img.logo {
 #top-menu a:visited .top-menu-link {
     background-color: #a66fd3;
     color: azure;
+    transition: 300ms;
 }
 
 #top-menu a:link .top-menu-link-special,
 #top-menu a:visited .top-menu-link-special {
     background-color: #e03737;
     color: azure;
+    transition: 300ms;
 }
 
 #top-menu a:hover .top-menu-link,
@@ -130,6 +154,7 @@ header img.logo {
 #top-menu a .top-menu-link.top-menu-link-selected {
     background-color: teal;
     color: azure;
+    transition: 300ms;
 }
 
 /* expandable menu */
@@ -138,34 +163,31 @@ header img.logo {
     width: auto;
 }
 
-#top-menu .top-menu-expandable .top-menu-link::after {
-    content: " [...]";
-    font-size: 0.6em;
-}
-
 #top-menu .top-menu-expandable .top-menu-expandable-object {
     /* defaultowe ukrycie */
-    display: none;
+    /* display: none; */
     /* aby nie rozszerzać rodzica */
     position: absolute;
     text-align: left;
-    font-size: 0.9em;
+    font-size: 0.9em;    
     width: auto;
+
+    transform-origin: top;
+    transform: scale(1, 0);
 }
 
 #top-menu .top-menu-expandable:hover .top-menu-expandable-object {
     /* pokazanie po najechaniu */
-    display: block;
+    display: block;  
+      
+    transform: scale(1, 1);
+    animation: 200ms ease 0s 1 rollFromTop;
 }
 
 #top-menu .top-menu-expandable .top-menu-expandable-object .top-menu-link {
     border-top-right-radius : 0.5em;
     border-bottom-right-radius : 0.5em;
     margin-top: 0.1em;
-}
-
-#top-menu .top-menu-expandable .top-menu-expandable-object .top-menu-link::after {
-    display: none;
 }
 
 /* main content */
@@ -183,6 +205,7 @@ header img.logo {
     font-size: 1.6em;
     text-align: center;
     margin-bottom: 0.5em;
+    text-shadow: 0.03em 0.03em 0 rgba(0, 0, 0, 0.5);
 }
 
 .inner-section-container {
@@ -251,18 +274,25 @@ header img.logo {
 .section a:visited .section-link {
     background-color: #a66fd3;
     color: azure;
+    transition: 300ms;
 }
 
 .section a:link .section-link-special,
 .section a:visited .section-link-special {
     background-color: #e03737;
     color: azure;
+    transition: 300ms;
 }
 
 .section a:hover .section-link,
 .section a:active .section-link {
     background-color: teal;
     color: azure;
+    transition: 300ms;
+}
+
+.section .inner-section-container>ul li {
+    animation: 300ms ease 0s 1 rollFromTop;
 }
 
 .section .inner-section-container.cafeteria {
@@ -290,6 +320,8 @@ header img.logo {
     padding: 0.6em;
     min-width: 100px;
     border: 2px #292929 solid;
+    background-color: #a66fd3;
+    color: azure;
 }
 
 .section .prices table td {
@@ -300,11 +332,17 @@ header img.logo {
 
 .section .prices table img {
     margin: 0;
+    box-shadow: none;
+}
+
+.section .prices table img:hover {
+    box-shadow: none;
 }
 
 /* footer */
 footer.section {
-    background-color: rgba(0, 0, 0, 0.795);
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.795));
+    /* background-color: rgba(0, 0, 0, 0.795); */
     color: azure;
     text-align: left;
     padding: 10px 0;
@@ -313,6 +351,7 @@ footer.section {
 footer.section img {
     float: left;
     margin: 15px;
+    box-shadow: none;
 }
 
 #form-newsletter-header {
@@ -342,12 +381,14 @@ footer.section img {
     background-color: #a66fd3;
     border: 2px solid #a66fd3;    
     border-radius: 0.4em;
+    transition: 300ms;
 }
 
 #form-newsletter .submit-button:hover {
     background-color: teal;
     border-color: teal;
     cursor: pointer;
+    transition: 300ms;
 }
 
 #form-newsletter .submit-button:active {
@@ -358,4 +399,15 @@ footer.section img {
     margin-top: 0.4em;
     font-size: 0.8em;
 }
+
+@keyframes rollFromTop {
+    0% {
+      transform: scale(1, 0);
+      transform-origin: top;
+    }
+    100% {
+      transform: scale(1, 1);
+      transform-origin: top;
+    }
+  }
 

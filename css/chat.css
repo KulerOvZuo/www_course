@@ -1,0 +1,164 @@
+#chat {
+    position: fixed;
+    left: 1em;
+    top: -460px;
+    z-index: 1000;
+    transition: 400ms;
+}
+
+#chat.opened {
+    position: fixed;
+    transition: 400ms;
+    top: 0;
+}
+
+#chat .chat-label {
+    position: relative;
+    text-align: center;    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    font-variant: small-caps;
+
+    color: azure;
+    background-color: #a66fd3;
+    padding: 0.2em;
+    transition: 300ms;
+    width: 6em;
+
+    border: 4px solid #292929;
+    border-top: none;
+
+    border-bottom-left-radius: 1em;  
+    border-bottom-right-radius: 1em;
+}
+
+#chat .chat-label:hover {
+    background-color: teal;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+#chat .chat-interface {
+    position: relative;
+    width: 350px;
+    height: 450px;
+    border: 4px solid #292929;
+    border-top: none;
+    border-bottom-right-radius: 1em;    
+    background-image: linear-gradient(to right,rgba(255, 226, 172, 0.6), rgba(255, 226, 172, 0.8));
+    font-size: 1em;
+}
+
+/* input */
+#chat .chat-input {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-top: 2px solid #292929;
+}
+
+#chat .chat-input .text {
+    position: relative;
+    color: black;
+    padding: 6px 0.6em;
+    background-color: azure;    
+    border: 2px solid #292929;
+    border-radius: 0.4em;
+    width: 70%;
+    resize: none;
+    float: left;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#chat .chat-input .submit { 
+    position: relative;   
+    color: azure;
+    font-weight: bold;
+    padding: 0.2em 0.6em;
+    background-color: #a66fd3;
+    border: 2px solid #a66fd3;    
+    border-radius: 0.4em;
+    transition: 300ms;
+    font-size: 1em;
+}
+
+#chat .chat-input .submit:hover {
+    background-color: teal;
+    border-color: teal;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+#chat .chat-input .submit:active {
+    border-style: inset;
+}
+
+#chat .chat-messages {
+    position: relative;
+    clear: both;
+    overflow: auto;
+    height: 374px;
+    color: azure;
+}
+
+#chat .chat-messages li[client] {
+    margin: 0.1em 0;
+}
+
+#chat .chat-messages li[client] div {
+    max-width: 70%;
+}
+
+#chat .chat-messages li[client] div span{
+    display: inline-block;
+    padding: 0.4em 0.6em;
+    border: 2px solid #292929;
+    text-align: left;
+    word-wrap: normal;
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+#chat .chat-messages li[client="true"] + li[client="false"],
+#chat .chat-messages li[client="false"] + li[client="true"] {
+    margin-top: 0.5em;
+}
+
+#chat .chat-messages li[client="true"] div {
+    text-align: right;
+    margin-left: auto;
+    margin-right: 0.2em;
+}
+#chat .chat-messages li[client="true"] div span {
+    background-color: #a66fd3;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+#chat .chat-messages li[client="true"].first div span{
+    border-top-right-radius: 1em;
+}
+#chat .chat-messages li[client="true"].last div span{
+    border-bottom-right-radius: 1em;
+}
+
+#chat .chat-messages li[client="false"] div {
+    text-align: left;
+    margin-left: 0.2em;
+    margin-right: auto;
+}
+#chat .chat-messages li[client="false"] div span {
+    background-color: teal;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+#chat .chat-messages li[client="false"].first div span{
+    border-top-left-radius: 1em;
+}
+#chat .chat-messages li[client="false"].last div span{
+    border-bottom-left-radius: 1em;
+}

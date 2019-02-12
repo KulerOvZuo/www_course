@@ -414,5 +414,62 @@ footer.section img:hover {
       transform: scale(1, 1);
       transform-origin: top;
     }
-  }
+}
 
+
+@keyframes blinkingBorder {
+    from {
+        box-shadow: 0 0 0.1em 0.1em rgba(255, 226, 172, 0.6)
+    }
+    to{
+        box-shadow: 0 0 0.3em 0.3em #a66fd3;
+    }
+}
+
+#flippingImageContainer {
+    width:300px;
+    height:200px;
+    margin: 1.6em auto;
+    position: relative;
+    perspective: 1000px;
+}
+
+#flippingImageContainer:hover {
+    cursor: pointer;
+}
+
+#flippingImageContainer .card { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 1000ms;
+    transform-style: preserve-3d;
+    transform-origin: center center -50px;
+}
+
+#flippingImageContainer img {
+    margin: 0;
+    padding: 0;
+    animation: blinkingBorder 800ms linear 0s infinite alternate;
+}
+
+#flippingImageContainer .card.clicked {
+    transform: rotateY(180deg);
+}
+
+#flippingImageContainer .face {
+    margin: 0;
+    padding: 0; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* backface-visibility: hidden; */
+}
+
+#flippingImageContainer .face.top {
+    /* transform: translateZ(50px); */
+}
+
+#flippingImageContainer .face.bottom {
+    transform: rotateY(180deg) translateZ(100px);
+}

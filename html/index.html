@@ -14,11 +14,44 @@
 
         <base href="">
 
-        <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />        
+        <link rel="stylesheet" type="text/css" media="screen" href="../css/chat.css" />
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
         <script src="../js/main.js"></script>  
+        <script src="../js/chat.js"></script>  
     </head>
     <body align="center">
         <div id="main-container" >
+            <div id="chat">
+                <div class="chat-interface">
+                    <div class="chat-messages">
+                        <ul>
+                            <li client="true" class="first"><div><span>Dzień dobry</span></div></li>
+                            <li client="true" class="last"><div><span>Chciałbym zadać pytanie odnośnie składania zamówień.
+Jaki jest okres oczekiwania?
+Pozdrawiam, Marian</span></div></li>
+                            
+                            <li client="false" class="first"><div><span>Dzień dobry</span></div></li>
+                            <li client="false">
+                                <div><span>Oczywiście. Realizaja zamówienia zależy od ciasta oraz okresu (np. świąteczny)</span></div>
+                            </li>
+                            <li client="false" class="last"><div><span>Będę oczekiwać na dalsze pytania :)</span></div></li>
+                            
+                            <li client="true" class="first last">
+                                <div><span>Rozumiem. Dziękuję i pozdrawiam</span></div>
+                            </li>
+                            
+                            <li id="last-message" client="false" class="first last"><div><span>Pozdrawiam, Anna</span></div></li>
+                        </ul>
+                    </div>
+                    <div class="chat-input">
+                        <textarea rows="3" cols="30" class="text" placeholder="Wpisz wiadomość..."></textarea>
+                        <button class="submit">Wyślij</button>
+                    </div>
+                </div>
+                <div class="chat-label">Chat</div>
+            </div>
             <header class="section">
                 <a href="index.html" title="Strona główna">
                     <img src="../static/Logo_transparent.png" alt="logo Ciasta Andrzeja"

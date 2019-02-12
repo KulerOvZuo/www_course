@@ -1,0 +1,67 @@
+#container  {
+    border: 2px solid black;
+}
+
+#container > * {
+    border: 2px solid black;
+    min-height: 100px;
+}
+
+header {
+    background-color: green;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+main * {
+    width: 100px;
+    min-width: 100px;
+    padding: 1em;
+    margin: 0.4em;
+}
+
+nav {
+    flex: 1 0 auto;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+
+nav * {
+    width: 50px;
+    min-width: 50px;
+    min-height: 20px;
+    background-color: aliceblue;
+    flex: 1 0 auto;
+    margin: 0.2em;
+    padding: 0.5em;
+}
+
+article {      
+    min-width: 300px;
+    column-count: auto;
+    column-width: 300px;
+    flex: 1000 1 auto;
+    background-color: orange;
+}
+
+aside {
+    flex: 1 0 auto;
+    background-color: teal;
+}
+
+
+footer {
+    background-color: red;
+}
+

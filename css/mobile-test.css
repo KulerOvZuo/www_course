@@ -1,49 +1,26 @@
-/* 
 main {
-    display: flex;
-    flex-direction: row;
-    flex-flow: row;
-    flex-wrap: wrap;
-}
-
-main * {
-    width: 100px;
-    min-width: 100px;
-    padding: 1em;
-    margin: 0.4em;
+    flex-flow: column;
+    flex-direction: column;
 }
 
 nav {
-    background-color: blue;
-    flex: 0 0% 0;
-    display: flex;
-    flex-flow: row wrap;
+    width: auto;
+    flex: 1 1 auto;
+    align-self: stretch;
 }
 
 nav * {
-    width: 50px;
-    min-width: 50px;
-    min-height: 20px;
-    background-color: aliceblue;
-    flex: 0 0% 0;
-    margin: 0.2em;
-    padding: 0.5em;
+    width: auto;    
 }
 
-article {      
-    min-width: 300px;
-    column-count: auto;
-    column-width: 300px;
-    flex: 1000 100% auto;
-    background-color: orange;
+article {
+    width: auto;
 }
 
 aside {
-    flex: 1 0 auto;
-    background-color: teal;
+    width: auto;
 }
-
 
 footer {
     background-color: aqua;
-} */
+}

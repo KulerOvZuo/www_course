@@ -19,11 +19,9 @@ main {
     flex-wrap: wrap;
 }
 
-@media all and (max-width: 700px){
-    main {
-        flex-flow: column;
-    }
-}
+/* @media all and (max-width: 700px){
+
+} */
 
 main * {
     width: 100px;

@@ -7,3 +7,8 @@ https://caniuse.com/
 
 http://expressprefixr.herokuapp.com/
 https://leaverou.github.io/prefixfree/
+
+https://www.w3schools.com/html/html5_browsers.asp
+https://modernizr.com
+https://html5boilerplate.com/
+https://www.udemy.com/kurs-tworzenia-stron-www-w-html-i-css-od-podstaw-do-eksperta/learn/lecture/7212980#questions/3465044
